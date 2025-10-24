@@ -8,77 +8,18 @@
     body, html {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
+      height: 100%;
     }
-    section {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-    #landing {
-      background: url('images/landing.jpg') no-repeat center center/cover;
-      color: #fff;
-    }
-    #landing button {
-      padding: 15px 30px;
-      font-size: 18px;
-      margin-top: 20px;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      background: #007bff;
-      color: #fff;
-    }
-    #menu {
-      background: #f9f9f9;
-    }
-    #menu img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    #about {
-      background: #eee;
-      padding: 50px 20px;
-    }
-    h1, h2 {
-      margin: 10px 0;
-    }
-    p {
-      max-width: 600px;
-      line-height: 1.6;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
 
-  <!-- Landing Section -->
-  <section id="landing">
-    <h1>Welcome to QR Code Labs</h1>
-    <p>Your AI-powered menu experience.</p>
-    <button onclick="document.getElementById('menu').scrollIntoView();">
-      View Menu
-    </button>
-  </section>
-
-  <!-- Menu Section -->
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <img src="images/menu.jpg" alt="Menu">
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about">
-    <h2>About Server Labs</h2>
-    <p>Server Labs is an AI-powered platform designed to simplify digital experiences.  
-    We create smart, efficient solutions like QR Code Labs to bring your menus and services directly to your customers.</p>
-  </section>
+  <img src="images/menu.jpg" alt="QR Code Labs">
 
 </body>
 </html>
