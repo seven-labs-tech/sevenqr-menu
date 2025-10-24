@@ -36,11 +36,29 @@
       padding: 40px 20px;
       text-align: center;
     }
+    h2 { margin-bottom: 20px; }
     iframe {
       border: none;
       width: 90%;
       height: 500px;
       max-width: 800px;
+    }
+    .menu-category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    .menu-category h3 {
+      margin: 0;
+      color: #007bff;
+    }
+    .menu-category ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      max-width: 400px;
     }
     footer {
       background: #111;
@@ -58,12 +76,37 @@
   </header>
 
   <nav>
-    <a href="#menu">Menu</a>
+    <a href="#menu-web">Menu (Web)</a>
+    <a href="#menu-pdf">Menu (PDF)</a>
     <a href="#about">About Us</a>
   </nav>
 
-  <section id="menu">
-    <h2>Our Menu</h2>
+  <section id="menu-web">
+    <h2>Our Menu (Web Version)</h2>
+
+    <div class="menu-category">
+      <h3>Food</h3>
+      <ul>
+        <li>Sandwich - 30 ETB</li>
+        <li>Burger - 50 ETB</li>
+        <li>Pasta - 60 ETB</li>
+        <li>Pizza - 80 ETB</li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h3>Drinks</h3>
+      <ul>
+        <li>Water - 10 ETB</li>
+        <li>Juice - 25 ETB</li>
+        <li>Soda - 20 ETB</li>
+        <li>Coffee - 30 ETB</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="menu-pdf">
+    <h2>Our Menu (PDF Version)</h2>
     <iframe src="doc.pdf"></iframe>
   </section>
 
