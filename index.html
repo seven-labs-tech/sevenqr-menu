@@ -3,122 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SevenQR Menu</title>
+  <title>QR Code Labs</title>
   <style>
-    body {
-      font-family: sans-serif;
+    body, html {
       margin: 0;
       padding: 0;
-      background: #fafafa;
-      color: #111;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 15px 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #007bff;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
     }
     section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h2 { margin-bottom: 20px; }
-    iframe {
-      border: none;
-      width: 90%;
-      height: 500px;
-      max-width: 800px;
-    }
-    .menu-category {
+      height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-    .menu-category h3 {
-      margin: 0;
-      color: #007bff;
-    }
-    .menu-category ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-      max-width: 400px;
-    }
-    footer {
-      background: #111;
-      color: #fff;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
+    }
+    #landing {
+      background: url('images/landing.jpg') no-repeat center center/cover;
+      color: #fff;
+    }
+    #landing button {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background: #007bff;
+      color: #fff;
+    }
+    #menu {
+      background: #f9f9f9;
+    }
+    #menu img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    #about {
+      background: #eee;
+      padding: 50px 20px;
+    }
+    h1, h2 {
+      margin: 10px 0;
+    }
+    p {
+      max-width: 600px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to SevenQR</h1>
-    <p>Scan the QR or explore our menu online!</p>
-  </header>
-
-  <nav>
-    <a href="#menu-web">Menu (Web)</a>
-    <a href="#menu-pdf">Menu (PDF)</a>
-    <a href="#about">About Us</a>
-  </nav>
-
-  <section id="menu-web">
-    <h2>Our Menu (Web Version)</h2>
-
-    <div class="menu-category">
-      <h3>Food</h3>
-      <ul>
-        <li>Sandwich - 30 ETB</li>
-        <li>Burger - 50 ETB</li>
-        <li>Pasta - 60 ETB</li>
-        <li>Pizza - 80 ETB</li>
-      </ul>
-    </div>
-
-    <div class="menu-category">
-      <h3>Drinks</h3>
-      <ul>
-        <li>Water - 10 ETB</li>
-        <li>Juice - 25 ETB</li>
-        <li>Soda - 20 ETB</li>
-        <li>Coffee - 30 ETB</li>
-      </ul>
-    </div>
+  <!-- Landing Section -->
+  <section id="landing">
+    <h1>Welcome to QR Code Labs</h1>
+    <p>Your AI-powered menu experience.</p>
+    <button onclick="document.getElementById('menu').scrollIntoView();">
+      View Menu
+    </button>
   </section>
 
-  <section id="menu-pdf">
-    <h2>Our Menu (PDF Version)</h2>
-    <iframe src="doc.pdf"></iframe>
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <img src="images/menu.jpg" alt="Menu">
   </section>
 
+  <!-- About Us Section -->
   <section id="about">
-    <h2>About Us</h2>
-    <p>SevenQR is all about giving customers an easy way to access our menu online.  
-    Our mission is simple: provide a smooth, digital-first dining experience with just one scan.</p>
+    <h2>About Server Labs</h2>
+    <p>Server Labs is an AI-powered platform designed to simplify digital experiences.  
+    We create smart, efficient solutions like QR Code Labs to bring your menus and services directly to your customers.</p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 SevenQR — Built by SevenLabs-Tech</p>
-  </footer>
 
 </body>
 </html>
+
